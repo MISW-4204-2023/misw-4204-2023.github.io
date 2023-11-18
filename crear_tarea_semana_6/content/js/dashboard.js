@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 4.644445884080504, "KoPercent": 95.35555411591949};
+    var data = {"OkPercent": 76.99626640973142, "KoPercent": 23.003733590268578};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.021950850824911463, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.010307793152628811, 500, 1500, "Cargar Tareas"], "isController": false}, {"data": [0.033577660928924405, 500, 1500, "Login"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.5028905214982536, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.26255432158377595, 500, 1500, "Cargar Tareas"], "isController": false}, {"data": [0.7421292958423455, 500, 1500, "Login"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 555696, 529887, 95.35555411591949, 509.40048875643765, 3, 53539, 587.0, 29880.40000000001, 32733.0, 35655.95000000001, 48.914507353337285, 73.01197175120654, 18777.547617817545], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Cargar Tareas", 277654, 265971, 95.79224502438286, 735.0957162511635, 3, 53539, 84.0, 29457.0, 32733.0, 35655.95000000001, 24.44042875455781, 67.3344819169455, 18772.07635952644], "isController": false}, {"data": ["Login", 278042, 263916, 94.9194725976651, 284.02021277360916, 3, 30255, 21.0, 1941.800000000003, 12155.95, 27539.950000000008, 24.48379576061071, 5.680379337242532, 5.666778776761677], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 8303, 1910, 23.003733590268578, 12397.266048416272, 8, 74007, 628.0, 37222.0, 39267.0, 42846.519999999946, 8.880118929209313, 3.1384450851461483, 68320.15289588313], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Cargar Tareas", 4142, 1867, 45.0748430709802, 18104.225012071398, 61, 74007, 8288.0, 39268.7, 41004.55, 44116.78999999996, 4.4305909736603395, 1.1232426337547494, 68329.78813149058], "isController": false}, {"data": ["Login", 4161, 43, 1.0334054313866858, 6716.3662581110075, 8, 30009, 15.0, 28442.8, 29078.299999999996, 29979.38, 4.494641751884109, 2.035495288241451, 1.0446530634261895], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["503/Service Unavailable", 109278, 20.62288752130171, 19.66506867064006], "isController": false}, {"data": ["Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset by peer", 5516, 1.040976661061698, 0.9926290633727793], "isController": false}, {"data": ["502/Bad Gateway", 55, 0.01037957149354485, 0.009897497912527713], "isController": false}, {"data": ["504/Gateway Timeout", 1442, 0.2721334926125759, 0.2594943998157266], "isController": false}, {"data": ["500/Internal Server Error", 1, 1.8871948170081545E-4, 1.7995450750050388E-4], "isController": false}, {"data": ["422/Unprocessable Entity", 24, 0.004529267560819571, 0.004318908180012093], "isController": false}, {"data": ["Non HTTP response code: java.net.SocketException/Non HTTP response message: Broken pipe", 258310, 48.74812931813764, 46.48404883245516], "isController": false}, {"data": ["403/Forbidden", 154611, 29.17810778524478, 27.822946359160404], "isController": false}, {"data": ["422/unknown", 650, 0.12266766310553005, 0.11697042987532752], "isController": false}]}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["504/Gateway Timeout", 1872, 98.01047120418848, 22.546067686378418], "isController": false}, {"data": ["502/Bad Gateway", 11, 0.5759162303664922, 0.13248223533662531], "isController": false}, {"data": ["422/Unprocessable Entity", 27, 1.4136125654450262, 0.32518366855353487], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 555696, 529887, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Broken pipe", 258310, "403/Forbidden", 154611, "503/Service Unavailable", 109278, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset by peer", 5516, "504/Gateway Timeout", 1442], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["Cargar Tareas", 277654, 265971, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Broken pipe", 258310, "Non HTTP response code: java.net.SocketException/Non HTTP response message: Connection reset by peer", 5516, "504/Gateway Timeout", 1363, "422/unknown", 650, "502/Bad Gateway", 55], "isController": false}, {"data": ["Login", 278042, 263916, "403/Forbidden", 154559, "503/Service Unavailable", 109278, "504/Gateway Timeout", 79, "", "", "", ""], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 8303, 1910, "504/Gateway Timeout", 1872, "422/Unprocessable Entity", 27, "502/Bad Gateway", 11, "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["Cargar Tareas", 4142, 1867, "504/Gateway Timeout", 1829, "422/Unprocessable Entity", 27, "502/Bad Gateway", 11, "", "", "", ""], "isController": false}, {"data": ["Login", 4161, 43, "504/Gateway Timeout", 43, "", "", "", "", "", "", "", ""], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
