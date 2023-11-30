@@ -1,0 +1,50 @@
+{
+  "Leer Archivo" : {
+    "transaction" : "Leer Archivo",
+    "sampleCount" : 14453,
+    "errorCount" : 2,
+    "errorPct" : 0.013837958,
+    "meanResTime" : 6326.7405382965735,
+    "medianResTime" : 6361.0,
+    "minResTime" : 374.0,
+    "maxResTime" : 25745.0,
+    "pct1ResTime" : 8092.6,
+    "pct2ResTime" : 8757.0,
+    "pct3ResTime" : 11803.439999999988,
+    "throughput" : 16.048689055400345,
+    "receivedKBytesPerSec" : 247463.763349415,
+    "sentKBytesPerSec" : 7.381259320465215
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 28910,
+    "errorCount" : 2,
+    "errorPct" : 0.0069180215,
+    "meanResTime" : 3394.647768938086,
+    "medianResTime" : 4054.5,
+    "minResTime" : 21.0,
+    "maxResTime" : 25745.0,
+    "pct1ResTime" : 7376.0,
+    "pct2ResTime" : 7909.0,
+    "pct3ResTime" : 8940.980000000003,
+    "throughput" : 31.99785721717148,
+    "receivedKBytesPerSec" : 246671.20653581448,
+    "sentKBytesPerSec" : 11.357640491456538
+  },
+  "Login" : {
+    "transaction" : "Login",
+    "sampleCount" : 14457,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 463.3662585598689,
+    "medianResTime" : 115.0,
+    "minResTime" : 21.0,
+    "maxResTime" : 14505.0,
+    "pct1ResTime" : 783.0,
+    "pct2ResTime" : 1569.0,
+    "pct3ResTime" : 7313.1,
+    "throughput" : 16.049994004982526,
+    "receivedKBytesPerSec" : 8.887586301537722,
+    "sentKBytesPerSec" : 4.012498501245632
+  }
+}
